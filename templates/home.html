@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Welcome Page{% endblock %}
+
+{% block content %}
+    <div>
+        <div>
+            <ul> 
+                <li><a href="{{ url_for('form') }}">Login</a></li>
+            </ul> 
+        </div>
+        <div style="text-align: center;">
+            <h1 style="margin-top: 50px;">This is Web Development with Python</h1>
+            <p id="intro">A Basic JavaScript Example.</p>
+            
+            <button id="btn" type="button" onclick="myFunction()" onmouseover="mOver()" onmouseout="mOut()">See this</button>
+
+            <p id="welcome"></p>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='myscript.js') }}"></script>
+{% endblock %}
+ 

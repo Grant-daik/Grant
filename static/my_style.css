@@ -1,0 +1,55 @@
+/* Reset default margin and padding for body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+
+
+}
+/* Center the form horizontally and vertically */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    height: 100vh;
+}
+
+.centered-form {
+    width: 300px; 
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling form labels and inputs for same appearance */
+.centered-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.centered-form input[type="text"],
+.centered-form input[type="number"],
+.centered-form input[type="tel"],
+.centered-form input[type="email"] {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.centered-form input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.centered-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
